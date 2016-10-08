@@ -12,11 +12,103 @@
 
 </head>
 <body>
-    <h1>Hello, world!</h1>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="..\bower_components\jquery\dist\jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="..\bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
+
+    <div class="container">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#">
+                        <img class="img-responsive" height="40" width="70" alt="Brand" src="logo.png">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+                    </button>
+                </div>
+                <!-- Single button -->
+                <div class="col-md-3">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            John Doe <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> (3) items
+                    </button>
+
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Laptop, Tablets & Phones</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TV, Audio & Photo <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">TVs & Accessories</a></li>
+                                <li><a href="#">Audio Hi-Fi</a></li>
+                                <li><a href="#">Home cinema</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Appliances</a></li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Smart tech</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">User</a></li>
+            <li class="active">Profile</li>
+        </ol>
+        <div class="row">
+            <div id="sidebar" class="col-md-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
+                </ul>
+            </div>
+            <div id="maincontainer" class="col-md-10">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
