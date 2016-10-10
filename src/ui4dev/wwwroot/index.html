@@ -94,21 +94,109 @@
         <div class="row">
             <div id="sidebar" class="col-md-2">
                 <ul class="nav nav-pills nav-stacked">
-                    <li role="presentation" class="active"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">Profile</a></li>
-                    <li role="presentation"><a href="#">Messages</a></li>
+                    <li role="presentation" class="active" data-toggle="tab"><a href="#">Profile</a></li>
+                    <li role="presentation" data-toggle="tab"><a href="#">Address Book</a></li>
+                    <li role="presentation" data-toggle="tab"><a href="#">Orders</a></li>
+                    <li role="presentation" data-toggle="tab"><a href="#">Notifications</a></li>
+                    <li role="presentation" data-toggle="tab"><a href="#">Gift cards</a></li>
+                    <li role="presentation" data-toggle="tab"><a href="#">Reviews</a></li>
                 </ul>
             </div>
             <div id="maincontainer" class="col-md-10">
                 <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">Profile</a></li>
-                    <li role="presentation"><a href="#">Messages</a></li>
+                    <li role="presentation" class="active" data-toggle="tab"><a href="#">My information</a></li>
+                    <li role="presentation" data-toggle="tab"><a href="#">Password</a></li>
+                    <li role="presentation" data-toggle="tab"><a href="#">Email</a></li>
                 </ul>
+                <form>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="text-red">*</span></label>
+                                <input type="text" id="firstName" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="text-red">*</span></label>
+                                <input type="text" id="lastName" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="address">Address <span class="text-red">*</span></label>
+                                <input type="text" id="address" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="address2">Address line 2 (optional):</label>
+                                <input type="text" id="address2" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="city">City <span class="text-red">*</span></label>
+                                <input type="text" id="city" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="state">State <span class="text-red">*</span></label>
+                                <select id="state" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="zipCode">Zip code</label>
+                                <input type="text" id="zipCode" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="country" class="pull-left">Country <span class="text-red">*</span></label>
+                                <small class="form-text pull-right text-blue">Customs notice</small>
+                                <select id="country" class="form-control"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="help-block">Please enter your billing phone number on file with your credit card company.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="phone"><span class="text-red">*</span> <b>Phone:</b></label>
+                                <input type="text" id="phone" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="otherPhone">Other Phone:</label>
+                                <input type="text" id="otherPhone" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-default btn-danger">Cancel</button>
+                            <button type="submit" class="btn btn-default btn-success">Save</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>
